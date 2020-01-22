@@ -81,7 +81,6 @@ for (var i = 0; i < sortObj.length; i++) {
 
 for (var j = 0; j < Obj.length; j++) {
   const country = sortObj[j].country;
-
   setTimeout(() => {
     console.log("Email has been Sent : " + country);
   }, Obj[j]);
