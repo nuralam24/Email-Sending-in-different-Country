@@ -49,6 +49,7 @@ var h = [
   { country: "America/Goose_Bay" }
 ];
 
+
 var Ar = [];
 for (var i = 0; i < h.length; i++) {
   Ar.push(h[i].country);
@@ -74,8 +75,7 @@ var sortObj = time.sort((a, b) => new Date(a.date) - new Date(b.date));
 var FixedTime = new Date(2019, 11, 31, 11, 00, 00).getTime();
 //console.log('FixedTime = '+ FixedTime);
 
-var Obj = [],
-  res = 0;
+var Obj = [], res = 0;
 for (var i = 0; i < sortObj.length; i++) {
   res = FixedTime - sortObj[i].date;
   Obj.push(res);
@@ -88,7 +88,6 @@ for (var j = 0; j < Obj.length; j++) {
     console.log("Email has been Sent : " + country);
   }, Obj[j]);
 }
-
 
 
 
