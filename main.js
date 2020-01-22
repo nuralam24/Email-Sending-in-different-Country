@@ -62,7 +62,10 @@ for (var j = 0; j < Ar.length; j++) {
     timeZone: Ar[j]
   });
   var a = new Date(DateTime).getTime();
-  time.push({ date: a, country: h[j].country });
+  time.push({ 
+    date: a, 
+    country: h[j].country 
+  });
 }
 
 var sortObj = time.sort((a, b) => new Date(a.date) - new Date(b.date));
